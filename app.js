@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 let Material = require('./models/material');
 let Suppliers = require('./models/supplier');
-mongoose.connect('mongodb://localhost/inventory', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/inventory2', { useNewUrlParser: true, useUnifiedTopology: true });
 let db = mongoose.connection;
 
 function today() {
